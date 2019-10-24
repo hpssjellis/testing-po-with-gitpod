@@ -3,16 +3,16 @@ image:
   
   
 tasks:
-  -  command: mkdir /workspace/gitpod-po-util/logs                                                                    &&
-              touch /workspace/gitpod-po-util/logs/gitpod-install-log.txt                                             &&
-              mkdir /workspace/gitpod-po-util/particleFirmware                                                        &&
+  -  command: mkdir /workspace/testing-po-with-gitpod/logs                                                                    &&
+              touch /workspace/testing-po-with-gitpod/logs/gitpod-install-log.txt                                             &&
+              mkdir /workspace/testing-po-with-gitpod/particleFirmware                                                        &&
 
-              echo "Starting .gitpod.yml installation" &>>  /workspace/gitpod-po-util/logs/gitpod-install-log.txt     &&
+              echo "Starting .gitpod.yml installation" &>>  /workspace/testing-po-with-gitpod/logs/gitpod-install-log.txt     &&
               
               
-              ln -s /home/gitpod/.po-util/src/particle/firmware /workspace/gitpod-po-util/particleFirmware            &&
+              ln -s /home/gitpod/.po-util/src/particle/firmware /workspace/testing-po-with-gitpod/particleFirmware            &&
               
-              echo "Starting Po"                      &>>  /workspace/gitpod-po-util/logs/gitpod-install-log.txt      &&     
+              echo "Starting Po"                      &>>  /workspace/testing-po-with-gitpod/logs/gitpod-install-log.txt      &&     
               echo "Ending .gitpod.yml installation"  &>>   /workspace/po/logs/gitpod-install-log.txt    
               
               

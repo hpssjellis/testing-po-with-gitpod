@@ -9,8 +9,6 @@ tasks:
 
               echo "Starting .gitpod.yml installation" &>>  /workspace/gitpod-po-util/logs/gitpod-install-log.txt     &&
               
-              sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"             &&
-              export PATH=${PATH}:/home/gitpod/.linuxbrew/bin                                                         &&
               
               ln -s /home/gitpod/.po-util/src/particle/firmware /workspace/gitpod-po-util/particleFirmware            &&
               
